@@ -1,0 +1,89 @@
+/*#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+  background: #F5EEF8
+}
+
+#greeting-container {
+  margin-top: 20px;
+}
+#paragraph1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #f2f2f2
+}
+#paragraph2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #F5EEF8
+  
+}
+#paragraph3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+  background: #f2f2f2
+
+}
+h2{
+  width: 500px;
+  align-content: center;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+p{
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  word-spacing: 2px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 100px;
+}
+li{
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  word-spacing: 2px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px; 
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+#comments {
+    text-align: left;
+    padding: 30px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px; 
+    word-spacing: 2px;
+}
+
+#map {
+  height: 500px;
+  width: 500px;
+
+
+}*/

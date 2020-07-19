@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+- each choice has a value of 0-3. After the form is submitted, number of each value selected should be total to calculate the result
+- shoul increment count that is used to display the results on result.html
+- should redirect to result.html after submit
+-->
+
+<body style="background-color:powderblue;">
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Depression Inventory</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="script.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEqLA84LuF5WXCqQnY9OQKZnI10OJpOps&callback=initMap"
+  type="text/javascript"></script>
+    </head>
+
+    
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-blue">
+  <a href="#home" class="w3-button w3-bar-item">Home Page</a>
+  <a href="questionnaire.html" class="w3-button w3-bar-item">Questionnaire</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="/Pictures/MentalHealthStock.jpeg" 
+  style="width:100%">
+  <img class="mySlides" src="/Pictures/GreenWords.png"
+  style="width:100%">
+</section>
+
+<!-- Page Description -->
+<body style="background-color:powderblue;">
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Mental Health Resources</h2>
+
+  <p class="w3-opacity"><i>Mental health includes emotional, psychological, and the social well-being
+    of a person. It plays a direct impact on our thoughts, the way we feel and behave. Furthermore 
+    our mental health influnces how we handle stress, interact with others and the chioces we make daily.
+    It's absolutely important in every stage of our lives. This is why it's very important to ensure healthy mental health.
+     </i></p>
+  <p class="w3-justify"> The current global crisis has caused an impact on people's mental health on many diffrent ways. 
+      Here is a set usefull resources to help cope with stress and other diorderes that negetivly impact mental health! </p>
+</section>
+
+<!-- Resource List -->
+<p> National Institute of Mental Health <p/>
+    <p> This website has great information on a variety of disorders such as Anxiety, Depression, 
+        and Post-Traumatic stress. It provides great information on treating options and dignosis. 
+    <a href ="https://www.nimh.nih.gov/index.shtml"> NIH</a>
+           </p>
+
+<p>AETAS <p/>
+      <p> This rescource is actually an app that offers mind balancing extercises to help relax, 
+          focus, and to mantain metal well-being . 
+          And the app contains interactive extercises that can be completed to curb from unhealthy thoughts. 
+           <a href ="https://apps.apple.com/us/app/aetas/id954977409"> AETAS</a>
+           </p>      
+<p> Breathe2Relax<p/>
+      <p> This resource is created by the National Center for Telehealth and Technology
+           and it highlights the importance of taking a few deep breaths as a de-stress. 
+           This resource includes educational videos on stree response and guided beathing sessions. 
+           <a href ="https://pluralsight.com"> Elonquent</a>
+           </p>
+<p>  Mental Health America<p/>
+        <p> This organizations mission is to promote mental health, it includes prevention services for all,
+            early identification care and intervention for those at risk. MHA provides outreach programs and events. 
+           <a href ="https://www.mhanational.org/"> MHA</a>
+           </p>
+           </body>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
