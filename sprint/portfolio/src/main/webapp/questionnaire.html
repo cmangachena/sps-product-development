@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+- each choice has a value of 0-3. After the form is submitted, number of each value selected should be total to calculate the result
+- shoul increment count that is used to display the results on result.html
+- should redirect to result.html after submit
+-->
+
+<body>
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Depression Inventory</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="script.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEqLA84LuF5WXCqQnY9OQKZnI10OJpOps&callback=initMap"
+  type="text/javascript"></script>
+    </head>
+
+    <h1>Welcome! Take this mental health test below!</h1>
+
+    <div id="container">
+        <form id="mental" action="/data" method="POST">
+            <div id="question1" class="tab">
+                <h4 id="text">Sadness</h4>
+                <input type="radio" id="q1_0" name="q1" value="0" oninput="this.className = ''">
+                <label for="q1_0">I do not feel sad.</label><br>
+                <input type="radio" id="q1_1" name="q1" value="1" oninput="this.className = ''">
+                <label for="q1_1">I feel sad.</label><br>
+                <input type="radio" id="q1_2" name="q1" value="2" oninput="this.className = ''">
+                <label for="q1_2">I am sad all the time and I can't snap out of it.</label><br>
+                <input type="radio" id="q1_3" name="q1" value="3" oninput="this.className = ''">
+                <label for="q1_3">I am so sad and unhappy that I can't stand it.</label><br><br>
+            </div>
+            <div id="question2" class="tab">
+                <h4 id="text">Pessimism</h4>
+                <input type="radio" id="q2_0" name="q2" value="0" oninput="this.className = ''">
+                <label for="q2_0">I am not particularly discouraged about the future.</label><br>
+                <input type="radio" id="q2_1" name="q2" value="1" oninput="this.className = ''">
+                <label for="q2_1">I feel discouraged about the future.</label><br>
+                <input type="radio" id="q2_2" name="q2" value="2" oninput="this.className = ''">
+                <label for="q2_2">I feel I have nothing to look forward to.</label><br>
+                <input type="radio" id="q2_3" name="q2" value="3" oninput="this.className = ''">
+                <label for="q2_3">I feel the future is hopeless and that things cannot improve.</label><br><br>
+            </div>
+            <div id="question3" class="tab">
+                <h4 id="text">Failure</h4>
+                <input type="radio" id="q3_0" name="q3" value="0" oninput="this.className = ''">
+                <label for="q3_0">I do not feel like a failure.</label><br>
+                <input type="radio" id="q3_1" name="q3" value="1" oninput="this.className = ''">
+                <label for="q3_1">I feel I have failed more than the average person.</label><br>
+                <input type="radio" id="q3_2" name="q3" value="2" oninput="this.className = ''">
+                <label for="q3_2">As I look back on my life, all I can see is a lot of failures.</label><br>
+                <input type="radio" id="q3_3" name="q3" value="3" oninput="this.className = ''">
+                <label for="q3_3">I feel I am a complete failure as a person.</label><br><br>
+            </div>
+            <div id="question4" class="tab">
+                <h4 id="text">Dissatisfaction</h4>
+                <input type="radio" id="q4_0" name="q4" value="0" oninput="this.className = ''">
+                <label for="q4_0">I get as much satisfaction out of things as I used to.</label><br>
+                <input type="radio" id="q4_1" name="q4" value="1" oninput="this.className = ''">
+                <label for="q4_1">I don't enjoy things the way I used to.</label><br>
+                <input type="radio" id="q4_2" name="q4" value="2" oninput="this.className = ''">
+                <label for="q4_2">I don't get real satisfaction out of anything anymore.</label><br>
+                <input type="radio" id="q4_3" name="q4" value="3" oninput="this.className = ''">
+                <label for="q4_3">I am dissatisfied or bored with everything.</label><br><br>
+            </div>
+            <div id="question5" class="tab">
+                <h4 id="text">Feeling Guilty</h4>
+                <input type="radio" id="q5_0" name="q5" value="0" oninput="this.className = ''">
+                <label for="q5_0">I don't feel particularly guilty.</label><br>
+                <input type="radio" id="q5_1" name="q5" value="1" oninput="this.className = ''">
+                <label for="q5_1">I feel guilty a good part of the time.</label><br>
+                <input type="radio" id="q5_2" name="q5" value="2" oninput="this.className = ''">
+                <label for="q5_2">I feel quite guilty most of the time.</label><br>
+                <input type="radio" id="q5_3" name="q5" value="3" oninput="this.className = ''">
+                <label for="q5_3">I feel guilty all of the time.</label><br><br>
+            </div>
+            <div id="question6" class="tab">
+                <h4 id="text">Feeling Punished</h4>
+                <input type="radio" id="q6_0" name="q6" value="0" oninput="this.className = ''">
+                <label for="q6_0">I don't feel I am being punished.</label><br>
+                <input type="radio" id="q6_1" name="q6" value="1" oninput="this.className = ''">
+                <label for="q6_1">I feel I may be punished.</label><br>
+                <input type="radio" id="q6_2" name="q6" value="2" oninput="this.className = ''">
+                <label for="q6_2">I expect to be punished.</label><br>
+                <input type="radio" id="q6_3" name="q6" value="3" oninput="this.className = ''">
+                <label for="q6_3">I feel I am being punished.</label><br><br>
+            </div>
+            <div id="question7" class="tab">
+                <h4 id="text">Self-Dislike</h4>
+                <input type="radio" id="q7_0" name="q7" value="0" oninput="this.className = ''">
+                <label for="q7_0">I don't feel disappointed in myself.</label><br>
+                <input type="radio" id="q7_1" name="q7" value="1" oninput="this.className = ''">
+                <label for="q7_1">I am disappointed in myself.</label><br>
+                <input type="radio" id="q7_2" name="q7" value="2" oninput="this.className = ''">
+                <label for="q7_2">I am disgusted with myself.</label><br>
+                <input type="radio" id="q7_3" name="q7" value="3" oninput="this.className = ''">
+                <label for="q7_3">I hate myself.</label><br><br>
+            </div>
+            <div id="question8" class="tab">
+                <h4 id="text">Self-Critical</h4>
+                <input type="radio" id="q8_0" name="q8" value="0" oninput="this.className = ''">
+                <label for="q8_0">I don't feel I am any worse than anybody else.</label><br>
+                <input type="radio" id="q8_1" name="q8" value="1" oninput="this.className = ''">
+                <label for="q8_1">I am critical of myself for my weaknesses or mistakes.</label><br>
+                <input type="radio" id="q8_2" name="q8" value="2" oninput="this.className = ''">
+                <label for="q8_2">I blame myself all the time for my faults.</label><br>
+                <input type="radio" id="q8_3" name="q8" value="3" oninput="this.className = ''">
+                <label for="q8_3">I blame myself for everything bad that happens.</label><br><br>
+            </div>
+            <div id="question9" class="tab">
+                <h4 id="text">Suicidal Ideation</h4>
+                <input type="radio" id="q9_0" name="q9" value="0" oninput="this.className = ''">
+                <label for="q9_0">I don't have any thoughts of killing myself.</label><br>
+                <input type="radio" id="q9_1" name="q9" value="1" oninput="this.className = ''">
+                <label for="q9_1">I have thoughts of killing myself, but I would not carry them out.</label><br>
+                <input type="radio" id="q9_2" name="q9" value="2" oninput="this.className = ''">
+                <label for="q9_2">I would like to kill myself.</label><br>
+                <input type="radio" id="q9_3" name="q9" value="3" oninput="this.className = ''">
+                <label for="q9_3">I would kill myself if I had the chance.</label><br><br>
+            </div>
+            <div id="question10" class="tab">
+                <h4 id="text">Crying</h4>
+                <input type="radio" id="q10_0" name="q10" value="0" oninput="this.className = ''">
+                <label for="q10_0">I don't cry any more than usual.</label><br>
+                <input type="radio" id="q10_1" name="q10" value="1" oninput="this.className = ''">
+                <label for="q10_1">I cry more now than I used to.</label><br>
+                <input type="radio" id="q10_2" name="q10" value="2" oninput="this.className = ''">
+                <label for="q10_2">I cry all the time now.</label><br>
+                <input type="radio" id="q10_3" name="q10" value="3" oninput="this.className = ''">
+                <label for="q10_3">I used to be able to cry, but now I can't cry even though I want to.</label><br><br>
+            </div>
+            <div id="question11" class="tab">
+                <h4 id="text">Irritability</h4>
+                <input type="radio" id="q11_0" name="q11" value="0" oninput="this.className = ''">
+                <label for="q11_0">I am no more irritated by things than I ever was.</label><br>
+                <input type="radio" id="q11_1" name="q11" value="1" oninput="this.className = ''">
+                <label for="q11_1">I am slightly more irritated now than usual.</label><br>
+                <input type="radio" id="q11_2" name="q11" value="2" oninput="this.className = ''">
+                <label for="q11_2">I am quite annoyed or irritated a good deal of the time.</label><br>
+                <input type="radio" id="q11_3" name="q11" value="3" oninput="this.className = ''">
+                <label for="q11_3">I feel irritated all the time.</label><br><br>
+            </div>
+            <div id="question12" class="tab">
+                <h4 id="text">Loss of Interest</h4>
+                <input type="radio" id="q12_0" name="q12" value="0" oninput="this.className = ''">
+                <label for="q12_0">I have not lost interest in other people.</label><br>
+                <input type="radio" id="q12_1" name="q12" value="1" oninput="this.className = ''">
+                <label for="q12_1">I am less interested in other people than I used to be.</label><br>
+                <input type="radio" id="q12_2" name="q12" value="2" oninput="this.className = ''">
+                <label for="q12_2">I have lost most of my interest in other people.</label><br>
+                <input type="radio" id="q12_3" name="q12" value="3" oninput="this.className = ''">
+                <label for="q12_3">I have lost all of my interest in other people.</label><br><br>
+            </div>
+            <div id="question13" class="tab">
+                <h4 id="text">Indecisiveness</h4>
+                <input type="radio" id="q13_0" name="q13" value="0" oninput="this.className = ''">
+                <label for="q13_0">I make decisions about as well as I ever could.</label><br>
+                <input type="radio" id="q13_1" name="q13" value="1" oninput="this.className = ''">
+                <label for="q13_1">I put off making decisions more than I used to.</label><br>
+                <input type="radio" id="q13_2" name="q13" value="2" oninput="this.className = ''">
+                <label for="q13_2">I have greater difficulty in making decisions more than I used to.</label><br>
+                <input type="radio" id="q13_3" name="q13" value="3" oninput="this.className = ''">
+                <label for="q13_3">I can't make decisions at all anymore.</label><br><br>
+            </div>
+            <div id="question14" class="tab">
+                <h4 id="text">Feeling Unattractive</h4>
+                <input type="radio" id="q14_0" name="q14" value="0" oninput="this.className = ''">
+                <label for="q14_0">I don't feel that I look any worse than I used to.</label><br>
+                <input type="radio" id="q14_1" name="q14" value="1" oninput="this.className = ''">
+                <label for="q14_1">I am worried that I am looking old or unattractive.</label><br>
+                <input type="radio" id="q14_2" name="q14" value="2" oninput="this.className = ''">
+                <label for="q14_2">I feel there are permanent changes in my appearance that make me look unattractive.</label><br>
+                <input type="radio" id="q14_3" name="q14" value="3" oninput="this.className = ''">
+                <label for="q14_3">I believe that I look ugly.</label><br><br>
+            </div>
+            <div id="question15" class="tab">
+                <h4 id="text">Work Inhibition</h4>
+                <input type="radio" id="q15_0" name="q15" value="0" oninput="this.className = ''">
+                <label for="q15_0">I can work about as well as before.</label><br>
+                <input type="radio" id="q15_1" name="q15" value="1" oninput="this.className = ''">
+                <label for="q15_1">It takes an extra effort to get started at doing something.</label><br>
+                <input type="radio" id="q15_2" name="q15" value="2" oninput="this.className = ''">
+                <label for="q15_2">I have to push myself very hard to do anything.</label><br>
+                <input type="radio" id="q15_3" name="q15" value="3" oninput="this.className = ''">
+                <label for="q15_3">I can't do any work at all.</label><br><br>
+            </div>
+            <div id="question16" class="tab">
+                <h4 id="text">Changes in Sleeping Pattern</h4>
+                <input type="radio" id="q16_0" name="q16" value="0" oninput="this.className = ''">
+                <label for="q16_0">I can sleep as well as usual.</label><br>
+                <input type="radio" id="q16_1" name="q16" value="1" oninput="this.className = ''">
+                <label for="q16_1">I don't sleep as well as I used to.</label><br>
+                <input type="radio" id="q16_2" name="q16" value="2" oninput="this.className = ''">
+                <label for="q16_2">I wake up 1-2 hours earlier than usual and find it hard to get back to sleep.</label><br>
+                <input type="radio" id="q16_3" name="q16" value="3" oninput="this.className = ''">
+                <label for="q16_3">I wake up several hours earlier than I used to and cannot get back to sleep.</label><br><br>
+            </div>
+            <div id="question17" class="tab">
+                <h4 id="text">Fatigue</h4>
+                <input type="radio" id="q17_0" name="q17" value="0" oninput="this.className = ''">
+                <label for="q17_0">I don't get more tired than usual.</label><br>
+                <input type="radio" id="q17_1" name="q17" value="1" oninput="this.className = ''">
+                <label for="q17_1">I get tired more easily than I used to.</label><br>
+                <input type="radio" id="q17_2" name="q17" value="2" oninput="this.className = ''">
+                <label for="q17_2">I get tired from doing almost anything.</label><br>
+                <input type="radio" id="q17_3" name="q17" value="3" oninput="this.className = ''">
+                <label for="q17_3">I am too tired to do anything.</label><br><br>
+            </div>
+            <div id="question18" class="tab">
+                <h4 id="text">Changes in Appetite</h4>
+                <input type="radio" id="q18_0" name="q18" value="0" oninput="this.className = ''">
+                <label for="q18_0">My appetite is no worse than usual.</label><br>
+                <input type="radio" id="q18_1" name="q18" value="1" oninput="this.className = ''">
+                <label for="q18_1">My appetite is not as good as it used to be.</label><br>
+                <input type="radio" id="q18_2" name="q18" value="2" oninput="this.className = ''">
+                <label for="q18_2">My appetite is much worse now.</label><br>
+                <input type="radio" id="q18_3" name="q18" value="3" oninput="this.className = ''">
+                <label for="q18_3">I have no appetite at all anymore.</label><br><br>
+            </div>
+            <div id="question19" class="tab">
+                <h4 id="text">Weight Loss</h4>
+                <input type="radio" id="q19_0" name="q19" value="0" oninput="this.className = ''">
+                <label for="q19_0">I haven't lost much weight, if any, lately.</label><br>
+                <input type="radio" id="q19_1" name="q19" value="1" oninput="this.className = ''">
+                <label for="q19_1">I have lost more than five pounds.</label><br>
+                <input type="radio" id="q19_2" name="q19" value="2" oninput="this.className = ''">
+                <label for="q19_2">I have lost more than ten pounds.</label><br>
+                <input type="radio" id="q19_3" name="q19" value="3" oninput="this.className = ''">
+                <label for="q19_3">I have lost more than fifteen pounds.</label><br><br>
+            </div>
+            <div id="question20" class="tab">
+                <h4 id="text">Worried about Health</h4>
+                <input type="radio" id="q20_0" name="q20" value="0" oninput="this.className = ''">
+                <label for="q20_0">I am no more worried about my health than usual.</label><br>
+                <input type="radio" id="q20_1" name="q20" value="1" oninput="this.className = ''">
+                <label for="q20_1">I am worried about physical problems like aches, pains, upset stomach, or constipation.</label><br>
+                <input type="radio" id="q20_2" name="q20" value="2" oninput="this.className = ''">
+                <label for="q20_2">I am very worried about physical problems and it's hard to think of much else.</label><br>
+                <input type="radio" id="q20_3" name="q20" value="3" oninput="this.className = ''">
+                <label for="q20_3">I am so worried about my physical problems that I cannot think of anything else.</label><br><br>
+            </div>
+            <div id="question21" class="tab">
+                <h4 id="text">Libido</h4>
+                <input type="radio" id="q21_0" name="q21" value="0" oninput="this.className = ''">
+                <label for="q21_0">I have not noticed any recent change in my interest in sex.</label><br>
+                <input type="radio" id="q21_1" name="q21" value="1" oninput="this.className = ''">
+                <label for="q21_1">I am less interested in sex than I used to be.</label><br>
+                <input type="radio" id="q21_2" name="q21" value="2" oninput="this.className = ''">
+                <label for="q21_2">I have almost no interest in sex.</label><br>
+                <input type="radio" id="q21_3" name="q21" value="3" oninput="this.className = ''">
+                <label for="q21_3">I have lost interest in sex completely.</label><br><br>
+ 
+                <!-- <input type="submit" value="Submit" onsubmit="displayResults()"> -->
+            </div>
+            
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+
+            <script>
+                //inside of the html form instead of a separate js file because first question would not load when the js was in a separate file
+                var currentTab = 0; // Current tab is set to be the first tab (0)
+                showTab(currentTab); // Display the current tab
+
+                function showTab(n) {
+                    // This function will display the specified tab of the form ...
+                    var x = document.getElementsByClassName("tab");
+                    x[n].style.display = "block";
+                    // ... and fix the Previous/Next buttons:
+                    if (n == 0) {
+                        document.getElementById("prevBtn").style.display = "none";
+                    } else {
+                        document.getElementById("prevBtn").style.display = "inline";
+                    }
+                    if (n == (x.length - 1)) {
+                        document.getElementById("nextBtn").innerHTML = "Submit";
+                    } else {
+                        document.getElementById("nextBtn").innerHTML = "Next";
+                    }
+                    // ... and run a function that displays the correct step indicator:
+                    fixStepIndicator(n)
+                }
+
+                function nextPrev(n) {
+                    // This function will figure out which tab to display
+                    var x = document.getElementsByClassName("tab");
+                    // Exit the function if any field in the current tab is invalid:
+                    if (n == 1 && !validateForm()) return false;
+                    // Hide the current tab:
+                    x[currentTab].style.display = "none";
+                    // Increase or decrease the current tab by 1:
+                    currentTab = currentTab + n;
+                    // if you have reached the end of the form... :
+                    if (currentTab >= x.length) {
+                        //...the form gets submitted:
+                        document.getElementById("mental").submit();
+                        displayResults();
+                        return false;
+                    }
+                    // Otherwise, display the correct tab:
+                    showTab(currentTab);
+                }
+
+                function validateForm() {
+                    // This function deals with validation of the form fields
+                    var x, y, i, valid = true;
+                    x = document.getElementsByClassName("tab");
+                    y = x[currentTab].getElementsByTagName("input");
+                    // A loop that checks every input field in the current tab:
+                    for (i = 0; i < y.length; i++) {
+                        // If a field is empty...
+                        if (y[i].value == "") {
+                            // add an "invalid" class to the field:
+                            y[i].className += " invalid";
+                            // and set the current valid status to false:
+                            valid = false;
+                        }
+                    }
+                    // If the valid status is true, mark the step as finished and valid:
+                    if (valid) {
+                        document.getElementsByClassName("step")[currentTab].className += " finish";
+                    }
+                    return valid; // return the valid status
+                }
+
+                function fixStepIndicator(n) {
+                    // This function removes the "active" class of all steps...
+                    var i, x = document.getElementsByClassName("step");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].className = x[i].className.replace(" active", "");
+                    }
+                    //... and adds the "active" class to the current step:
+                    x[n].className += " active";
+                }
+            </script>
+            <input type="submit" value = "Submit">
+        </form>
+    <h2>HERE ARE YOUR RESULTS</h2>
+    <div id="results">
+    </div>
+    </div>
+</body>
+
+</html>
