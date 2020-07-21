@@ -78,41 +78,40 @@ public class DataServlet extends HttpServlet {
       }
 
       System.out.println("THIS IS YOUR SCORE " + score);
-      String title = "Result";
+    //   String title = "Result";
       String result = "";
       // return results
       if(score >=0 && score <=10){
-        result = "This is your score " + score + ". These ups and downs are considered normal";
+        result = "Your score is " + score + ". These ups and downs are considered normal";
       }
       else if(score >=11 && score <= 16){
-        result =  "This is your score " + score + ". You are showing signs of mild mood disturbance";   
+        result =  "Your score is " + score + ". You are showing signs of mild mood disturbance";   
       }
       else if(score>=17 && score <= 20){
           result = "This is your score " + score + ". This shows you are experiencing bordeline clinical depression.";
       }
       else if(score>=21 && score <= 30){
-          result = "This is your score " + score + ". This shows you are experiencing moderate clinical depression.";
+          result = "Your score is " + score + ". This shows you are experiencing moderate clinical depression.";
       }
       else if(score>=31 && score <= 40){
-          result = "This is your score " + score + ". This shows you are experiencing severe clinical depression. ";
+          result = "Your score is " + score + ". This shows you are experiencing severe clinical depression. ";
       }
       else{
-          result = "This is your score "+ score + ". This shows you are experiencing extreme clinical depression";
+          result = "Your score is "+ score + ". This shows you are experiencing extreme clinical depression";
       }
       
 
       //Creates result entity
       Entity resultEntity = new Entity("Result");
 
-      resultEntity.setProperty("title", title);
+    //   resultEntity.setProperty("title", title);
       resultEntity.setProperty("result", result);
 
       DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
       datastore.put(resultEntity);
 
       // Redirects to main page
-      response.sendRedirect("/index.html");
+      response.sendRedirect("/results.html");
   
   }
 }
-
